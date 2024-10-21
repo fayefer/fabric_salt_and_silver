@@ -3,15 +3,15 @@
 	"id": "salt_and_silver",
 	"version": "${version}",
 	"name": "Salt And Silver",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Minecraft mod all about the spirits that hide around us, as well as the boons and curses they may inflict.",
 	"authors": [
-		"Me!"
+		"FayeFer"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/fayefer/fabric_salt_and_silver.git"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/salt_and_silver/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.fayefer.salt_and_silver.SaltAndSilverDataGenerator"
+		],
+		"client": [
+			"net.fayefer.salt_and_silver.SaltAndSilverClient"
 		]
 	},
 	"mixins": [
