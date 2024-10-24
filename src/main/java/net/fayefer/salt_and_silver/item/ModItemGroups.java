@@ -24,6 +24,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.ECTOPLASM);
 
+                        entries.add(ModItems.ECTOPLASM_FLUID);
+
                         entries.add(ModBlocks.RAW_IMPURE_SILVER_BLOCK);
                         entries.add(ModBlocks.IMPURE_SILVER_BLOCK);
                         entries.add(ModBlocks.IMPURE_SILVER_ORE);

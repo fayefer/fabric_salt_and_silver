@@ -2,9 +2,12 @@ package net.fayefer.salt_and_silver.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fayefer.salt_and_silver.SaltAndSilver;
+import net.fayefer.salt_and_silver.fluid.ModFluids;
 import net.fayefer.salt_and_silver.item.custom.EctoplasmItem;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -17,6 +20,8 @@ public class ModItems {
     public static final Item SILVER_NUGGET = registerItem("silver_nugget", new Item(new Item.Settings()));
 
     public static final Item ECTOPLASM = registerItem("ectoplasm", new EctoplasmItem(new Item.Settings()));
+
+    public static final Item ECTOPLASM_FLUID = registerItem("ectoplasm_fluid", new BucketItem(ModFluids.ECTOPLASM_FLUID_STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SaltAndSilver.MOD_ID,name), item);

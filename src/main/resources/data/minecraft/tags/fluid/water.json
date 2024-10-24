@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "salt_and_silver:milk_fluid_still",
+    "salt_and_silver:milk_fluid_flowing",
+    "salt_and_silver:ectoplasm_fluid_still",
+    "salt_and_silver:ectoplasm_fluid_flowing"
+  ]
+}

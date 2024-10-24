@@ -6,12 +6,17 @@
 
   "item.salt_and_silver.ectoplasm": "Ectoplasm",
 
+  "item.salt_and_silver.ectoplasm_fluid": "Bucket of Ectoplasm",
+
   "block.salt_and_silver.raw_impure_silver_block": "Raw Impure Silver Block",
   "block.salt_and_silver.impure_silver_block": "Impure Silver Block",
   "block.salt_and_silver.silver_block": "Silver Block",
   "block.salt_and_silver.impure_silver_ore": "Impure Silver Ore",
   "block.salt_and_silver.deepslate_impure_silver_ore": "Deepslate Impure Silver Ore",
   "block.salt_and_silver.salt_block": "Salt Block",
+
+  "block.salt_and_silver.milk_fluid_block": "Milk Fluid Block",
+  "block.salt_and_silver.ectoplasm_fluid_block": "Ectoplasm Fluid Block",
 
   "itemgroup.salt_and_silver.salt_and_silver": "Salt And Silver"
 }

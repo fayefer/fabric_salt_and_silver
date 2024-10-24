@@ -2,9 +2,15 @@ package net.fayefer.salt_and_silver.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fayefer.salt_and_silver.SaltAndSilver;
+import net.fayefer.salt_and_silver.fluid.EctoplasmFluidBlock;
+import net.fayefer.salt_and_silver.fluid.MilkFluidBlock;
+import net.fayefer.salt_and_silver.fluid.ModFluids;
+import net.fayefer.salt_and_silver.item.ModItemGroups;
 import net.minecraft.block.*;
+import net.minecraft.fluid.WaterFluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -33,6 +39,15 @@ public class ModBlocks {
     public static final Block SALT_BLOCK = registerBlock("salt_block",
             new ColoredFallingBlock(new ColorCode(15592941), AbstractBlock.Settings.create().mapColor(MapColor.WHITE).strength(0.6F).sounds(BlockSoundGroup.GRAVEL)));
 
+    public static final Block MILK_FLUID_BLOCK = registerBlockWithoutBlockItem("milk_fluid_block",
+            new MilkFluidBlock(ModFluids.MILK_FLUID_STILL, AbstractBlock.Settings.copy(Blocks.WATER).nonOpaque().noCollision().dropsNothing().mapColor(MapColor.WHITE)));
+
+    public static final Block ECTOPLASM_FLUID_BLOCK = registerBlockWithoutBlockItem("ectoplasm_fluid_block",
+            new EctoplasmFluidBlock(ModFluids.ECTOPLASM_FLUID_STILL, AbstractBlock.Settings.copy(Blocks.WATER).luminance(state -> 14).nonOpaque().noCollision().dropsNothing().mapColor(MapColor.CYAN)));
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(SaltAndSilver.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

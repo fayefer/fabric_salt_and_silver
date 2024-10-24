@@ -3,7 +3,7 @@
 	"package": "net.fayefer.salt_and_silver.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"MilkBucketItemMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
